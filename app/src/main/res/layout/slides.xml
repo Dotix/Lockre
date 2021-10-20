@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_image_slide"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:background="#eef"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/slide1" />
+
+    <TextView
+        android:id="@+id/tv_titre_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/tv_titre_slide1"
+        android:textSize="@dimen/text_titre_slide"
+        android:textColor="@color/splash_separator"
+        android:fontFamily="@font/chewy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image_slide" />
+
+    <TextView
+        android:id="@+id/tv_desc_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/tv_description_slide1"
+        android:textSize="@dimen/text_desc_slide"
+        android:textColor="@color/splash_text"
+        android:fontFamily="@font/chewy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titre_slide"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

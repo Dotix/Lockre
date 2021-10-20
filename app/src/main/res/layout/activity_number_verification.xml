@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/splash_background"
+    tools:context=".Activites.NumberVerificationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/splash_image_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_slogan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/chewy"
+            android:text="@string/slogan"
+            android:textColor="@color/splash_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/v_separateur_bas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@+id/v_separateur_haut"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/v_separateur_haut"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/splash_separator"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/v_separateur_bas"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/splash_separator"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/chewy"
+        android:textColor="@color/splash_text"
+        android:text="@string/insert_num"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/chewy"
+        android:text="@string/comment_num"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:text="@string/comment_sms_charge"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_indicatif"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ly_mumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_indicatif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/et_numero"
+                app:layout_constraintStart_toStartOf="@+id/ly_mumero"
+                android:inputType="number"
+                android:hint="@string/mask_ind"
+                android:textAlignment="center"
+                android:autofillHints=""
+                tools:ignore="MissingConstraints"
+                android:textSize="20sp"/>
+
+            <br.com.sapereaude.maskedEditText.MaskedEditText
+                android:id="@+id/et_numero"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/ly_mumero"
+                app:layout_constraintStart_toEndOf="@+id/et_indicatif"
+                android:gravity="center"
+                android:hint="@string/format_num"
+                android:inputType="phone"
+                app:keep_hint="true"
+                app:mask="## ## ## ##"
+                tools:ignore="MissingConstraints"
+                android:textSize="20sp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Lokre.Button"
+        android:id="@+id/bt_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/bt_verifier_phone" />
+
+    <ProgressBar
+        android:id="@+id/progress_spin"
+        android:indeterminate="true"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+</LinearLayout>

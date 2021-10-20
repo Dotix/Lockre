@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55mm"
+   height="55mm"
+   viewBox="0 0 55 55"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="token.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.5657509"
+     inkscape:cx="135.48548"
+     inkscape:cy="59.074419"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1042"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1364"
+     inkscape:window-height="694"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1042"
+       transform="translate(-104.78271,-87.959228)">
+      <circle
+         r="24.32935"
+         cy="115.53745"
+         cx="132.3391"
+         id="path929"
+         style="opacity:0.995193;fill:#ffea3e;fill-opacity:1;stroke:#ff9900;stroke-width:4;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         id="path858"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3715px;line-height:1.25;font-family:a_Simpler3D;-inkscape-font-specification:a_Simpler3D;letter-spacing:0px;word-spacing:0px;fill:#ff9900;fill-opacity:0.996078;stroke:none;stroke-width:0.220365;stroke-opacity:1"
+         d="m 126.78027,117.44301 v -12.0849 l -1.53355,-2.33314 -6.73715,-0.10491 0.0655,20.10656 1.62529,2.28066 h 13.34321 v -5.42641 l -1.53354,-2.33305 z" />
+      <path
+         sodipodi:nodetypes="cccccccccccc"
+         d="m 146.87152,102.83533 1.64989,1.37583 -0.007,4.39915 h -4.50356 v 17.21807 h -5.39008 l -1.49213,-1.6362 v -15.58187 h -3.16951 l -1.33406,-1.19697 0,-5.97516 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3715px;line-height:1.25;font-family:a_Simpler3D;-inkscape-font-specification:a_Simpler3D;letter-spacing:0px;word-spacing:0px;fill:#ff9900;fill-opacity:0.996078;stroke:none;stroke-width:0.254372;stroke-opacity:1"
+         id="path860" />
+      <path
+         id="path871"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3715px;line-height:1.25;font-family:a_Simpler3D;-inkscape-font-specification:a_Simpler3D;letter-spacing:0px;word-spacing:0px;fill:#ffea3e;fill-opacity:0.996078;stroke:none;stroke-width:0.252658;stroke-opacity:1"
+         d="m 146.76986,103.4981 -0.009,3.52927 h -4.50356 v 16.97705 h -3.90923 v -16.97705 h -4.61392 v -3.56993 z"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         d="m 124.74704,118.01812 0.11881,-14.57887 -4.25979,0.0327 0.0468,19.44723 11.46295,0.0255 0.0117,-4.82175 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3715px;line-height:1.25;font-family:a_Simpler3D;-inkscape-font-specification:a_Simpler3D;letter-spacing:0px;word-spacing:0px;fill:#ffea3e;fill-opacity:0.996078;stroke:none;stroke-width:0.220365;stroke-opacity:1"
+         id="path873"
+         sodipodi:nodetypes="ccccccc" />
+    </g>
+  </g>
+</svg>

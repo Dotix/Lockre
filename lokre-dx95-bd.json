@@ -1,0 +1,47 @@
+{
+  "Pays" : {
+    "Burkina Faso" : {
+      "name" : "Burkina Faso",
+      "iso2" : "bf",
+      "cities" : {
+        "001" : "Ouagadougou",
+        "002" : "Bobo-Diuoulasso",
+        "003" : "Koudougou",
+        "004" : "Kaya"
+      }
+    },
+    "Côte d'Ivoire" : {
+      "name" : "Côte d'Ivoire",
+      "iso2" : "ci",
+      "cities" : {
+        "001" : "Abidjan",
+        "002" : "Yamoussokro",
+        "003" : "Bouaké"
+      }
+    },
+    "Ghana" : {
+      "name" : "Ghana",
+      "iso2" : "gh",
+      "cities" : {
+      	"001" : "Accra",
+      	"002" : "Tarkwa"
+      }
+    },
+    "Togo" : {
+      "name" : "Togo",
+      "iso2" : "tg",
+      "cities" : {
+      	"001" : "Lomé",
+      	"002" : "Parakou"
+      }
+    },
+    "Mali" : {
+      "name" : "Mali",
+      "iso2" : "ml",
+      "cities" : {
+      	"001" : "Bamako",
+      	"002" : "Tiaye"
+      }
+    }
+  }
+}

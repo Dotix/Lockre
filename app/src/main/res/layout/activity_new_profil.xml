@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.NewProfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/splash_background"
+        tools:context=".Activites.NewProfilActivity"
+        style="@style/Theme.Lokre">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/splash_image_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_slogan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/chewy"
+            android:text="@string/slogan"
+            android:textColor="@color/splash_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/v_separateur_bas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@+id/v_separateur_haut"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/v_separateur_haut"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/splash_separator"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/v_separateur_bas"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/splash_separator"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/chewy"
+            android:textColor="@color/splash_text"
+            android:text="@string/basic_profil"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:padding="@dimen/padding_activity_profil"
+        android:gravity="center_vertical"
+        android:background="@color/button_background">
+
+        <ImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_user_profile"
+            android:contentDescription="@string/splash_image_description" />
+
+        <ImageView
+            android:id="@+id/user_cam_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@id/user_profile_image"
+            android:layout_alignBottom="@id/user_profile_image"
+            android:src="@drawable/ic_cam"
+            android:contentDescription="@string/splash_image_description" />
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Lokre.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/user_profile_image"
+        android:layout_alignBottom="@id/user_profile_image"
+
+        android:layout_marginStart="20dp"
+        android:hint="@string/hint_pseudo_profil">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pseudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/splash_background"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_nom"
+        android:contentDescription="@string/splash_image_description"/>
+    
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Lokre.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_activity_profil"
+        android:hint="@string/hint_nom_prenom_profil">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_nom_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="@string/splash_image_description"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Lokre.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_activity_profil"
+        android:hint="@string/hint_2e_numero_profil">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_2nd_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="@dimen/padding_activity_profil"
+        android:paddingBottom="@dimen/padding_activity_profil"
+        android:paddingEnd="15dp"
+        android:paddingStart="0dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_location"
+            android:contentDescription="@string/splash_image_description"/>
+
+        <TextView
+            android:id="@+id/tv_ville"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_activity_profil"
+            android:layout_marginEnd="@dimen/margin_activity_profil"
+            android:textSize="@dimen/text_activity_profil"
+            android:text="@string/tv_ville_profil"/>
+
+        <Spinner
+            android:id="@+id/sp_ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:contentDescription="@string/splash_image_description"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Lokre.Button"
+        android:id="@+id/bt_continuer_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/bt_continuer_profil" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

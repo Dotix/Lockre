@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/drapeau_pays"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/drapeau_description"
+        android:src="@drawable/country_il" />
+
+    <TextView
+        android:id="@+id/nom_pays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/drapeau_pays"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/nom_pays"
+        android:textSize="20sp" />
+
+</RelativeLayout>

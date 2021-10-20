@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "35539099838",
+    "firebase_url": "https://lokre-dx95.firebaseio.com",
+    "project_id": "lokre-dx95",
+    "storage_bucket": "lokre-dx95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35539099838:android:df1b7b6ab070a690c13eef",
+        "android_client_info": {
+          "package_name": "com.brainixdev.lokre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35539099838-tvfo3gekhf4tehsa1vul28e65o8g7of6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brainixdev.lokre",
+            "certificate_hash": "4e30d037ae41e13ba279d83ade1537d22ffd22f7"
+          }
+        },
+        {
+          "client_id": "35539099838-d5vukhcggqa20o154esgg7ep6q677tp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkivJy5ySP5N2jHiNu9Ow-lZJxd5Ic-go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35539099838-d5vukhcggqa20o154esgg7ep6q677tp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

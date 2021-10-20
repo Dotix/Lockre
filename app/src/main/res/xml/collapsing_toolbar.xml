@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/header_collapsed"
+        app:constraintSetStart="@id/header_expanded"
+        app:duration="1000"
+        app:motionInterpolator="easeInOut">
+
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/main_content"
+            app:moveWhenScrollAtTop="true"
+            app:touchAnchorSide="top"/>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                app:framePosition="90"
+                app:motionTarget="@id/main_search_area">
+
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="@color/transparent"/>
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/main_search_area">
+
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="@color/colorPrimaryDark"/>
+            </KeyAttribute>
+        </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/header_collapsed">
+
+        <Constraint
+            android:id="@id/main_user_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:alpha="0">
+
+        </Constraint>
+
+        <Constraint
+            android:id="@id/main_search_area"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="5dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp">
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/header_expanded">
+
+        <Constraint
+            android:id="@id/main_user_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:alpha="1">
+
+        </Constraint>
+
+        <Constraint
+            android:id="@id/main_search_area"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="10dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp">
+
+        </Constraint>
+
+    </ConstraintSet>
+
+</MotionScene>

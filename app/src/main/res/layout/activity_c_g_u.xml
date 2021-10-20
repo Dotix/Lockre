@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    tools:context=".Activites.CGUActivity">
+
+    <TextView
+        android:id="@+id/tv_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/chewy"
+        android:text="@string/titre_cgu"
+        android:textAlignment="center"
+        android:textColor="@color/splash_text"
+        android:textSize="24sp" />
+
+<ScrollView
+    android:id="@+id/ly_condition"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/cb_agree"
+    android:layout_below="@id/tv_condition"
+    android:layout_marginTop="25dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cb_responsabilite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:drawableStartCompat="@drawable/ic_baseline_check_circle_24"
+            android:text="@string/cgu1"
+            android:textSize="@dimen/text_cgu"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/cb_difficulte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:drawableStartCompat="@drawable/ic_baseline_check_circle_24"
+            android:text="@string/cgu2"
+            android:textSize="@dimen/text_cgu"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/cb_procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:drawableStartCompat="@drawable/ic_baseline_check_circle_24"
+            android:text="@string/cgu3"
+            android:textSize="@dimen/text_cgu"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+</ScrollView>
+
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_accepter_cgu"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/cgu4"
+        android:textStyle="bold|italic"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Lokre.Button"
+        android:id="@+id/bt_accepter_cgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/bt_accepter_cgu"/>
+
+</RelativeLayout>

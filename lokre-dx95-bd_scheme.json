@@ -1,0 +1,34 @@
+{
+  "Countries" : {
+    "Burkina Faso" : {
+      "country_name" : "Burkina Faso",
+      "country_iso2" : "bf",
+      "country_cities" : {
+        "city_1" : "Ouagadougou",
+        "city_2" : "Bobo-Diuoulasso",
+        "city_3" : "Koudougou",
+        "city_4" : "Kaya"
+      }
+    }
+  },
+  
+  "Users" : {
+    "lPqf1gGhHZTBtbK5hKqSQovq1OP2" : {
+      "Identity" : {
+        "user_last_name" : "Sawadogo",
+        "user_first_name" : "Kibsa Max Oreste",
+        "user_pseudo" : "D0t1x",
+        "user_profil_pic" : "gs://lokre-dx95.appspot.com/Airpods_i11_1.jpg",
+        "user_city_ville_" : "Ouagadougou",
+        "user_country" : "Burkina Faso",
+        "user_first_number" : "+22663081301",
+        "user_second_number" : "+22676157103",
+        "user_status" : 0,
+        "user_balance" : 0,
+        "user_score" : 0
+      }
+    }
+  },
+  
+  "Products" :
+}

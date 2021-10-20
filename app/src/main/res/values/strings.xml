@@ -1,0 +1,96 @@
+<resources>
+
+    <string name="app_name">Lokre</string>
+    <string name="slogan">"Les enchères du confort"</string>
+
+    <!--header-->
+    <string name="insert_num">"Vérification du numéro de téléphone : "</string>
+    <string name="insert_code">"Entrez le code reçu "</string>
+    <string name="basic_profil">"Profil de base"</string>
+    <string name="titre_cgu">"Conditions d'utilisation "</string>
+    <string name="cgu1">"Votre responsabilité personnelle est engagée pour toute activité sur votre compte (achat, vente, échange, …)"</string>
+    <string name="cgu2">"L'application ainsi que ses concepteurs ne sauraient être tenus pour responsables en cas de difficultés dans l'usage de l'application (défaut de réseau, problème de transaction, …)"</string>
+    <string name="cgu3">"Avant d'engager toute procédure à l'encontre de l'application et/ou de ses concepteurs, s'assurer d'avoir consulté, compris, et accepté toutes les conditions d'utilisation"</string>
+    <string name="cgu4">"Je reconnais avoir lu les <a href="conditions générales d\'utilisation">"conditions générales d'utilisation"</a></string>
+
+    <string name="bad_num">"par sms au %1$s -"</string>
+    <string name="default_pseudo">"user_%1$s"</string>
+    <string name="change_num">"- <a href="Mauvais numéro ?">Mauvais numéro ?</a></string>
+    <string name="comment_num">"(Un code vous sera envoyé par sms sur le numéro renseigné)"</string>
+    <string name="comment_sms_charge">"*des frais supplementaires peuvent s'appliquer"</string>
+
+    <string name="format_num">XXXXXXXX</string>
+    <string name="format_code">XXXXXX</string>
+
+    <string name="not_received_code">Vous n\'avez pas reçu de code ? -</string>
+    <string name="resend_code"> - <a href="http://192.168.1.105/Lokre/Resend.php">Renvoyer</a></string>
+    <string name="bt_verifier_phone">Vérifier</string>
+    <string name="bt_valider_code">Valider</string>
+    <string name="bt_continuer_profil">Continuer</string>
+    <string name="bt_accepter_cgu">Accepter</string>
+    <string name="mask_telephone">%1$s</string>
+    <string name="mask_ind">(+%1$s)</string>
+    <string name="nom_pays">"Burkina Faso"</string>
+    <string name="wrong_phone_format">"Numéro invalide\nVérifier le numéro"</string>
+    <string name="invite_phone">"Veuillez entre un numéro"</string>
+    <string name="connect_internet">"Veuillez vous connecter à internet et réessaayer"</string>
+    <string name="splash_image_description">"Image de l'application"</string>
+    <string name="drapeau_description">"Image de l'application"</string>
+    <string name="url_requete_code">"http://192.168.1.105/Lokre/Requete_code.php?nu=%1$s"</string>
+
+    <string name="tv_nom_profil">Pseudo : </string>
+    <string name="tv_prenom_profil">Nom &amp; Prénom(s) : </string>
+    <string name="tv_2e_num_profil">2nd numéro : </string>
+    <string name="tv_ville_profil">Ville : </string>
+
+    <string name="hint_pseudo_profil">Pseudo</string>
+    <string name="hint_nom_prenom_profil">Nom et prénom(s)</string>
+    <string name="hint_2e_numero_profil">2nd numéro</string>
+
+    <!-- Adresses des scripts-->
+    <string name="base_url">http://192.168.1.105/Lokre/%1$s</string>
+    <string name="script_requete_code">Requete_code.php?nu=</string>
+    <string name="script_renvoi_code">Renvoi_code.php?nu=</string>
+    <string name="script_validation_code">Validation_code.php?nu=</string>
+
+    <!-- Titres sliders-->
+    <string name="tv_titre_slide1">"Achetez des jetons"</string>
+    <string name="tv_titre_slide2">"Choisissez votre enchère"</string>
+    <string name="tv_titre_slide3">"Remportez le lot"</string>
+    <string name="tv_titre_slide4">"Profitez"</string>
+
+    <!-- Textes sliders-->
+    <string name="tv_description_slide1">"Procurez vous des jetons en achetant via mobile money de votre choix, vous pourrez ensuite les utiliser partout dans l'apllication"</string>
+    <string name="tv_description_slide2">"Parcourez la liste des enchères disponibles et inscrivez vous à celle(s) qui correspond(ent) à vos attentes, en consommant des jetons"</string>
+    <string name="tv_description_slide3">"Misez contre les autres participants et le plus offrant gagne. Selon votre dynamisme vous serez récompensé même en cas de défaite"</string>
+    <string name="tv_description_slide4">"Définissez comment vous souhaiter entrer en possession de votre prix puis acquitez vous du paiement selon vos préferences"</string>
+
+    <!-- Boutons sliders-->
+    <string name="bt_skip_slider">"Passer"</string>
+    <string name="bt_next_slider">"Suiv"</string>
+    <string name="bt_previous_slider">"Préc"</string>
+    <string name="bt_start_slider">"Commencer"</string>
+
+    <!-- SharedPreferences keys -->
+    <string name="cgu_key">"hasAcceptedCGU"</string>
+    <string name="slide_key">"hasPassedSlide"</string>
+    <string name="profil_key">"hasFilledProfil"</string>
+
+    <!-- Bottom navigation menu titles -->
+    <string name="bottom_menu_dashboard">Acceuil</string>
+    <string name="bottom_menu_history">Statistiques</string>
+    <string name="bottom_menu_token">Portefeuille</string>
+    <string name="bottom_menu_profil">Compte</string>
+
+    <!-- Home user info -->
+    <string name="searchbar_hint">Recherche</string>
+    <string name="default_balance">%1$d CT</string>
+
+    <!-- product card -->
+    <string name="product_name">Nom produit</string>
+    <string name="product_price">%1$d FCFA</string>
+    <string name="product_state"> : Etat</string>
+    <string name="product_date"> : Date</string>
+    <string name="product_joined"> 0</string>
+
+</resources>
